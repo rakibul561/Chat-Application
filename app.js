@@ -4,5 +4,5 @@ const mongoose = require('mongoose')
 
 
 // connecg express
-const app = express();
 dotenev.config();
+const app = express();
