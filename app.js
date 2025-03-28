@@ -43,12 +43,11 @@ app.use(cookieParser(process.env.COOKIE_SECRET ))
   app.use(notFoundHandler )
 
 //   common erro handler 
-  
   app.use(errorHandler)
 
 
 
-  
+  // port is started 
  app.listen(process.env.PORT, () =>{
     console.log(`app listening to port ${process.env.PORT}`);
     
