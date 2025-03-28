@@ -7,7 +7,6 @@ const cookieParser = require('cookie-parser');
 
 
 // internal imports
- 
 const {notFoundHandler, errorHandler} = require("./middlewares/common/errorHandller")
 
 // connecg express
@@ -16,7 +15,7 @@ const app = express();
   
 
 
-
+// connect a mongo db 
 mongoose.connect('')
 .then( () => console.log('connection succesfully '))
 .catch(err => console.log(err)
@@ -49,6 +48,7 @@ app.use(cookieParser(process.env.COOKIE_SECRET ))
 
 
 
+  
  app.listen(process.env.PORT, () =>{
     console.log(`app listening to port ${process.env.PORT}`);
     
